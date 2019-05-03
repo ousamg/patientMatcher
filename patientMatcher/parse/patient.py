@@ -134,7 +134,6 @@ def validate_api(json_obj, is_request):
     Returns
         validated(bool): True or False
     """
-    import pdb; pdb.set_trace()
     validated = True
     schema = '#/definitions/response'
     if is_request:
