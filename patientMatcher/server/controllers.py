@@ -110,6 +110,7 @@ def check_async_request(database, request):
         LOG.error('Async request not authorized. Abort')
         return 401
 
+    import pdb; pdb.set_trace()
     resp = data.get('response')
     if resp is None:
         LOG.error("Async server did not provide any 'response' object")
